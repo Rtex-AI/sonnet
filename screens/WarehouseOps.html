@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Warehouse Operations — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 10px 0; display: flex; flex-direction: column; gap: 1px; background: #F8FAFF; flex-shrink: 0; }
+    .nv { padding: 6px 16px; font-size: 12px; color: #3C486E; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+    .tab { padding: 8px 16px; font-size: 12.5px; font-weight: 600; color: #707CA3; border-bottom: 2.5px solid transparent; }
+    .tabon { color: #2A27B8; border-bottom-color: #3B37E6; }
+    .btn { height: 32px; padding: 0 14px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; }
+    .gbtn { height: 32px; padding: 0 14px; border-radius: 9px; border: 1.5px solid #C7D0EA; background: #FFFFFF; color: #3C486E; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 7px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; white-space: nowrap; }
+    td { font-size: 12px; padding: 7px 10px; border-bottom: 1px solid #ECF0FB; }
+    .q { text-align: right; font-variant-numeric: tabular-nums; }
+    .chip { display: inline-flex; align-items: center; height: 20px; padding: 0 9px; border-radius: 10px; font-size: 10.5px; font-weight: 700; }
+    .ok { background: #E3EEFF; color: #2A27B8; } .warn { background: #FCF3E4; color: #8A6420; } .err { background: #FDECEC; color: #9C3A3A; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Inventory · Warehouse Operations</div>
+    <div style="margin-left: auto; display: flex; gap: 8px">
+      <span class="role">Warehouse / Controller</span>
+      <span class="role" style="background: #E3EEFF; color: #2A27B8">Stock ledger + journal, automatic</span>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv">Costing</div>
+      <div class="nv">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv on">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv">Admin &amp; Users</div>
+    </div>
+
+    <div style="flex: 1; display: flex; flex-direction: column; min-width: 0">
+      <div style="display: flex; border-bottom: 1.5px solid #D5DDF2; padding: 0 18px; background: #FFFFFF">
+        <div class="tab tabon">Warehouse transfers</div>
+        <div class="tab">Physical count</div>
+        <div class="tab">BOM &amp; assembly</div>
+        <div class="tab">Month close</div>
+      </div>
+
+      <div style="flex: 1; padding: 14px 18px; display: flex; flex-direction: column; gap: 12px; min-height: 0">
+        <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; overflow: hidden; flex: 1; display: flex; flex-direction: column">
+          <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; display: flex; align-items: center; gap: 10px">
+            <div style="font-weight: 700; font-size: 13px">Transfer T-0912 — scanned this morning</div>
+            <span class="chip warn">Ready to apply</span>
+            <div style="margin-left: auto; display: flex; gap: 8px"><div class="gbtn" style="height: 28px">Import scans</div><div class="btn" style="height: 28px">Apply transfer</div></div>
+          </div>
+          <table>
+            <tr><th>Barcode</th><th>Item</th><th>From</th><th>To</th><th class="q" style="text-align: right">Qty</th><th class="q" style="text-align: right">Unit cost</th><th>Status</th></tr>
+            <tr><td>BC 88213</td><td>18133T · 89 · M</td><td>Main — W1</td><td>Outlet — W2</td><td class="q">24</td><td class="q">11.65</td><td><span class="chip ok">Valid</span></td></tr>
+            <tr><td>BC 88214</td><td>18133T · 89 · L</td><td>Main — W1</td><td>Outlet — W2</td><td class="q">18</td><td class="q">11.65</td><td><span class="chip ok">Valid</span></td></tr>
+            <tr><td>BC 87001</td><td>18120 · 44 · S</td><td>Main — W1</td><td>Outlet — W2</td><td class="q">12</td><td class="q">9.40</td><td><span class="chip err">Unknown barcode — fix</span></td></tr>
+          </table>
+          <div style="padding: 10px 14px; margin-top: auto; border-top: 1.5px solid #E5EAF8; font-size: 11.5px; color: #707CA3">
+            Apply moves stock <b style="color: #3C486E">W1 → W2</b> atomically with one journal entry — error rows stay behind for correction instead of half-posting like the legacy tool.
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px">
+          <div style="flex: 1; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px">
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px">Physical count</div>
+            <div style="font-size: 12px; color: #3C486E; line-height: 1.6">Scan shelves → counted vs system variance list → post count variances to the stock ledger. First-scan/overwrite handling built in.</div>
+            <div style="margin-top: 6px"><span class="chip warn">W1 count in progress — 214 items, 9 variances</span></div>
+          </div>
+          <div style="flex: 1; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px">
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px">BOM &amp; assembly</div>
+            <div style="font-size: 12px; color: #3C486E; line-height: 1.6">Build or break garment sets (assembly / disassembly) — kept internally with consistent build/break keys — no external views.</div>
+          </div>
+          <div style="flex: 1; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px">
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px">Month close (KJ)</div>
+            <div style="font-size: 12px; color: #3C486E; line-height: 1.6">Monthly inventory close with closing-balance snapshots and the KJ report — a report now, not a temp-table ritual.</div>
+            <div style="margin-top: 6px"><span class="chip ok">Aug 2026 closed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

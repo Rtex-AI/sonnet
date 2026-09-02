@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Cost Sheet & Approval — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .lbl { font-size: 10.5px; color: #707CA3; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+    .btn { height: 34px; padding: 0 16px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; }
+    .gbtn { height: 34px; padding: 0 16px; border-radius: 9px; border: 1.5px solid #C7D0EA; background: #FFFFFF; color: #3C486E; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 7px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; }
+    td { font-size: 12.5px; padding: 7px 10px; border-bottom: 1px solid #ECF0FB; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .step { display: flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 700; }
+    .dotd { width: 9px; height: 9px; border-radius: 5px; background: #3B37E6; }
+    .doto { width: 9px; height: 9px; border-radius: 5px; border: 1.5px solid #C7D0EA; background: #FFFFFF; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 10px 0; display: flex; flex-direction: column; gap: 1px; background: #F8FAFF; flex-shrink: 0; }
+    .nv { padding: 6px 16px; font-size: 12px; color: #3C486E; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Costing · Estimate — Style 18133T</div>
+    <div style="margin-left: auto; display: flex; gap: 8px">
+      <span class="role">Costing · Christina → Controller · Joumana</span>
+      <span class="role" style="background: #E3EEFF; color: #2A27B8">Phase 2 · Style &amp; Costing</span>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv on">Costing</div>
+      <div class="nv">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv">Admin &amp; Users</div>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; min-height: 0">
+  <div style="padding: 12px 18px; display: flex; align-items: center; gap: 18px; border-bottom: 1.5px solid #D5DDF2; background: #FFFFFF">
+    <div class="step"><span class="dotd"></span>Draft</div>
+    <svg width="26" height="8" viewBox="0 0 26 8"><path d="M0 4h26" stroke="#C7D0EA" stroke-width="1.5"/></svg>
+    <div class="step"><span class="dotd"></span>Submitted</div>
+    <svg width="26" height="8" viewBox="0 0 26 8"><path d="M0 4h26" stroke="#C7D0EA" stroke-width="1.5"/></svg>
+    <div class="step" style="color: #8A6420"><span class="doto" style="border-color: #C79A3C"></span>Awaiting approval</div>
+    <svg width="26" height="8" viewBox="0 0 26 8"><path d="M0 4h26" stroke="#C7D0EA" stroke-width="1.5"/></svg>
+    <div class="step" style="color: #9FA9CB"><span class="doto"></span>Approved — unlocks order entry</div>
+    <div style="margin-left: auto; display: flex; gap: 8px">
+      <div class="gbtn">Request changes</div>
+      <div class="btn">Approve cost sheet</div>
+    </div>
+  </div>
+
+  <div style="flex: 1; padding: 16px 18px; display: flex; gap: 16px; min-height: 0">
+    <div style="flex: 3; display: flex; flex-direction: column; gap: 12px; min-width: 0">
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; overflow: hidden; background: #FFFFFF">
+        <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; font-weight: 700; font-size: 13px">Fabric — prefilled from the style's BOM, editable</div>
+        <table>
+          <tr><th>Fabric / colorway</th><th class="num" style="text-align: right">Yield (m)</th><th class="num" style="text-align: right">Price / m</th><th class="num" style="text-align: right">Line cost</th></tr>
+          <tr><td>Range 25 · Poppy piqué — all colorways</td><td class="num">1.40</td><td class="num">4.20</td><td class="num" style="font-weight: 700">5.88</td></tr>
+        </table>
+      </div>
+
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; overflow: hidden; background: #FFFFFF">
+        <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; font-weight: 700; font-size: 13px">Trims</div>
+        <table>
+          <tr><th>Trim / colorway</th><th class="num" style="text-align: right">Qty</th><th class="num" style="text-align: right">Unit price</th><th class="num" style="text-align: right">Line cost</th></tr>
+          <tr><td>T-118 · Shell buttons — matched</td><td class="num">5</td><td class="num">0.06</td><td class="num" style="font-weight: 700">0.30</td></tr>
+          <tr><td>T-090 · Woven label + hang tag set</td><td class="num">1</td><td class="num">0.22</td><td class="num" style="font-weight: 700">0.22</td></tr>
+        </table>
+      </div>
+
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; overflow: hidden; background: #FFFFFF">
+        <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; font-weight: 700; font-size: 13px">Labor &amp; fixed allocations — defaults from System Settings</div>
+        <table>
+          <tr><td>Contractor sewing price (negotiated piece-rate)</td><td class="num" style="width: 110px; font-weight: 700">3.10</td></tr>
+          <tr><td>Presenter / travel per unit</td><td class="num" style="font-weight: 700">1.25</td></tr>
+          <tr><td>Label &amp; polybag per unit</td><td class="num" style="font-weight: 700">0.80</td></tr>
+          <tr><td>Testing allowance per unit</td><td class="num" style="font-weight: 700">0.10</td></tr>
+          <tr><td>Fabric allowance factor — already included in the yield above</td><td class="num" style="font-weight: 700">6%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div style="width: 300px; display: flex; flex-direction: column; gap: 12px">
+      <div style="border: 1.5px solid #3B37E6; border-radius: 12px; background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+        <div class="lbl" style="color: #2A27B8">Computed live</div>
+        <div style="display: flex; justify-content: space-between; font-size: 13px"><span>Total cost / unit</span><b style="font-variant-numeric: tabular-nums">11.65</b></div>
+        <div style="display: flex; justify-content: space-between; font-size: 13px"><span>Sale price</span><b style="font-variant-numeric: tabular-nums">£24.50</b></div>
+        <div style="height: 1.5px; background: #E5EAF8"></div>
+        <div style="display: flex; justify-content: space-between; font-size: 15px; color: #2A27B8"><b>Margin</b><b style="font-variant-numeric: tabular-nums">52.4%</b></div>
+        <div style="font-size: 11.5px; color: #707CA3">Recalculates as any line changes — no side spreadsheet. Figures shown in one currency for illustration; FX handled per customer.</div>
+      </div>
+      <div style="border: 1.5px dashed #C7D0EA; border-radius: 12px; padding: 12px 14px; font-size: 11.5px; color: #707CA3; line-height: 1.55">
+        <b style="color: #3C486E">The gate:</b> until Joumana approves, style 18133T does not appear in the Order Entry style list. Approval history is kept automatically.
+      </div>
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px; font-size: 12px; color: #3C486E; display: flex; flex-direction: column; gap: 6px">
+        <div class="lbl">Actual cost sheet</div>
+        <div>Opens automatically as purchases land. Weekly closing locks it and updates the item cost everywhere.</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

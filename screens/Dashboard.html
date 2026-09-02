@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Home Dashboard — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 12px 0; display: flex; flex-direction: column; gap: 2px; background: #F8FAFF; }
+    .nv { padding: 7px 18px; font-size: 12.5px; color: #3C486E; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .kpi { flex: 1; border: 1.5px solid #C7D0EA; border-radius: 12px; padding: 12px 14px; background: #FFFFFF; }
+    .lbl { font-size: 10.5px; color: #707CA3; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+    .num { font-size: 26px; font-weight: 700; margin-top: 4px; }
+    .card { border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; }
+    .row { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-bottom: 1px solid #E5EAF8; font-size: 12.5px; }
+    .pill { height: 20px; padding: 0 9px; border-radius: 10px; font-size: 10.5px; font-weight: 700; display: inline-flex; align-items: center; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Home</div>
+    <div style="margin-left: auto; display: flex; gap: 8px; align-items: center">
+      <div style="width: 220px; height: 30px; border: 1.5px solid #C7D0EA; border-radius: 15px; display: flex; align-items: center; padding: 0 12px; gap: 8px; color: #9FA9CB; font-size: 12px"><svg width="12" height="12" viewBox="0 0 12 12"><circle cx="5" cy="5" r="3.6" stroke="#9FA9CB" stroke-width="1.4" fill="none"/><path d="M8 8l3 3" stroke="#9FA9CB" stroke-width="1.4"/></svg>Search styles, orders, cuts…</div>
+      <span class="role">Signed in · role-based menu</span>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv on">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv">Costing</div>
+      <div class="nv">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv">Admin &amp; Users</div>
+    </div>
+
+    <div style="flex: 1; padding: 18px; display: flex; flex-direction: column; gap: 16px; min-width: 0">
+      <div style="display: flex; align-items: baseline; gap: 10px">
+        <div style="font-size: 17px; font-weight: 700">Good morning — here's the floor today</div>
+        <div style="font-size: 12px; color: #707CA3">Each user sees only the modules their role allows</div>
+      </div>
+
+      <div style="display: flex; gap: 12px">
+        <div class="kpi"><div class="lbl">Open orders</div><div class="num">42</div><div style="font-size: 11.5px; color: #707CA3">3 new from the web store overnight</div></div>
+        <div class="kpi"><div class="lbl">Cuts in progress</div><div class="num">11</div><div style="font-size: 11.5px; color: #707CA3">2 awaiting fabric confirmation</div></div>
+        <div class="kpi"><div class="lbl">Pending receipts</div><div class="num">7</div><div style="font-size: 11.5px; color: #707CA3">by contractor, due this week</div></div>
+        <div class="kpi"><div class="lbl">Cost sheets to approve</div><div class="num">4</div><div style="font-size: 11.5px; color: #707CA3">blocking order entry</div></div>
+        <div class="kpi"><div class="lbl">Journal entries</div><div class="num" style="color: #3B37E6">142</div><div style="font-size: 11.5px; color: #707CA3">today · all documents numbered</div></div>
+      </div>
+
+      <div style="display: flex; gap: 16px; flex: 1; min-height: 0">
+        <div class="card" style="flex: 3; display: flex; flex-direction: column">
+          <div style="padding: 12px 14px; border-bottom: 1.5px solid #E5EAF8; font-weight: 700; font-size: 13px">My actions</div>
+          <div class="row"><span class="pill" style="background: #FCF3E4; color: #8A6420">Approve</span><div>Cost sheet 18133T — Jan 2027 · submitted by Christina</div><div style="margin-left: auto; color: #707CA3">2h ago</div></div>
+          <div class="row"><span class="pill" style="background: #FCF3E4; color: #8A6420">Approve</span><div>Cost sheet 18140 — QVC UK · submitted by Christina</div><div style="margin-left: auto; color: #707CA3">4h ago</div></div>
+          <div class="row"><span class="pill" style="background: #E9F0FA; color: #33538C">Confirm</span><div>Cut 4471 — trim confirmation pending</div><div style="margin-left: auto; color: #707CA3">yesterday</div></div>
+          <div class="row"><span class="pill" style="background: #E9F0FA; color: #33538C">Receive</span><div>Cut 4468 — 640 pcs due back from JM Sewing</div><div style="margin-left: auto; color: #707CA3">due Fri</div></div>
+          <div class="row" style="border-bottom: none"><span class="pill" style="background: #FDECEC; color: #9C3A3A">Fix</span><div>Order RD 17951 — 1 line flagged: size not in style's grid</div><div style="margin-left: auto; color: #707CA3">new</div></div>
+        </div>
+
+        <div class="card" style="flex: 2; display: flex; flex-direction: column">
+          <div style="padding: 12px 14px; border-bottom: 1.5px solid #E5EAF8; font-weight: 700; font-size: 13px">Recent activity — with document references</div>
+          <div class="row"><div>Stock journal · receipt cut 4471</div><div style="margin-left: auto; color: #3B37E6; font-weight: 600">ADJ-000812</div></div>
+          <div class="row"><div>Web order imported · RD 17950</div><div style="margin-left: auto; color: #3B37E6; font-weight: 600">WEB-17950</div></div>
+          <div class="row"><div>Cost sheet 18129 closed · item cost updated</div><div style="margin-left: auto; color: #3B37E6; font-weight: 600">JE-2199</div></div>
+          <div class="row"><div>A/P batch posted · 6 supplier invoices</div><div style="margin-left: auto; color: #3B37E6; font-weight: 600">AP-2107</div></div>
+          <div class="row" style="border-bottom: none"><div>Care labels rendered · cut 4470</div><div style="margin-left: auto; color: #707CA3">PDF</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

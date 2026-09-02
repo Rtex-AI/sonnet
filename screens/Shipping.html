@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Shipping & SKU Correction — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 10px 0; display: flex; flex-direction: column; gap: 1px; background: #F8FAFF; flex-shrink: 0; }
+    .nv { padding: 6px 16px; font-size: 12px; color: #3C486E; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+    .lbl { font-size: 10.5px; color: #707CA3; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; margin-bottom: 4px; }
+    .in { height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; background: #FFFFFF; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px; }
+    .sel { justify-content: space-between; }
+    .btn { height: 32px; padding: 0 14px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; }
+    .gbtn { height: 32px; padding: 0 14px; border-radius: 9px; border: 1.5px solid #C7D0EA; background: #FFFFFF; color: #3C486E; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 7px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; white-space: nowrap; }
+    td { font-size: 12px; padding: 7px 10px; border-bottom: 1px solid #ECF0FB; }
+    .q { text-align: right; font-variant-numeric: tabular-nums; }
+    .chip { display: inline-flex; align-items: center; height: 20px; padding: 0 9px; border-radius: 10px; font-size: 10.5px; font-weight: 700; }
+    .ok { background: #E3EEFF; color: #2A27B8; } .warn { background: #FCF3E4; color: #8A6420; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Shipping · SH-1108 — RD 17952 / QVC UK</div>
+    <div style="margin-left: auto; display: flex; gap: 8px">
+      <span class="role">Shipping office</span>
+      <span class="role" style="background: #E3EEFF; color: #2A27B8">Phase 6 · Fulfilment</span>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv">Costing</div>
+      <div class="nv on">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv">Admin &amp; Users</div>
+    </div>
+
+    <div style="flex: 1; padding: 14px 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0">
+
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 14px 16px">
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px">
+          <div><div class="lbl">Shipment</div><div class="in" style="background: #EDF1FE; color: #2A27B8; font-weight: 700">SH-1108 · auto</div></div>
+          <div><div class="lbl">Order / customer</div><div class="in">RD 17952 · QVC UK</div></div>
+          <div><div class="lbl">Carrier</div><div class="in sel">Maersk — sea<svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="#707CA3" stroke-width="1.5" fill="none"/></svg></div></div>
+          <div><div class="lbl">Container / seal</div><div class="in">MSKU-441902-1 · S-88213</div></div>
+          <div><div class="lbl">HS code</div><div class="in sel">6106.20 — knit tops<svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="#707CA3" stroke-width="1.5" fill="none"/></svg></div></div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; flex: 1; min-height: 0">
+        <div style="flex: 3; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; overflow: hidden; display: flex; flex-direction: column">
+          <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; display: flex; align-items: center">
+            <div style="font-weight: 700; font-size: 13px">Skids &amp; cartons</div>
+            <div class="gbtn" style="margin-left: auto; height: 28px">+ Add skid</div>
+          </div>
+          <table>
+            <tr><th>Skid</th><th>Cartons</th><th>Contents</th><th class="q" style="text-align: right">Pcs</th><th>Box dim.</th><th class="q" style="text-align: right">Weight</th></tr>
+            <tr><td style="font-weight: 700">SK-01</td><td>1–24</td><td>18133T · 89 Citroen · XS–XL</td><td class="q">560</td><td>60×40×40</td><td class="q">312 kg</td></tr>
+            <tr><td style="font-weight: 700">SK-02</td><td>25–48</td><td>18133T · 89/92 mixed · L–3XL</td><td class="q">495</td><td>60×40×40</td><td class="q">296 kg</td></tr>
+            <tr><td style="font-weight: 700">SK-03</td><td>49–60</td><td>18133T · 92 Teal · XS–M</td><td class="q">335</td><td>60×40×40</td><td class="q">188 kg</td></tr>
+          </table>
+          <div style="padding: 10px 14px; margin-top: auto; border-top: 1.5px solid #E5EAF8; display: flex; align-items: center; gap: 8px">
+            <span style="font-size: 12px; color: #707CA3">1,390 pcs · 60 cartons · 3 skids</span>
+            <div style="margin-left: auto; display: flex; gap: 8px">
+              <div class="gbtn">Packing list PDF</div>
+              <div class="gbtn">Carton labels</div>
+              <div class="btn">Confirm shipment</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex: 2; display: flex; flex-direction: column; gap: 12px">
+          <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px">
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px">Customer SKU check — before invoicing</div>
+            <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 3px 0"><span>18133T-089-M → QVC SKU</span><span class="chip ok">884120-M</span></div>
+            <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 3px 0"><span>18133T-092-M → QVC SKU</span><span class="chip warn">missing — fix</span></div>
+            <div style="font-size: 11px; color: #707CA3; margin-top: 6px">Corrections update the invoice line directly (the old SKU-fix screen) — one database.</div>
+          </div>
+          <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px">
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px">Documents</div>
+            <div style="font-size: 12px; color: #3C486E; line-height: 1.7">Packing list &amp; carton labels → ready<br>Invoice <b>INV-88412</b> raised on confirm — A/R updated instantly.<br>Sales-order quantities relieved automatically.</div>
+          </div>
+          <div style="border: 1.5px dashed #C7D0EA; border-radius: 12px; padding: 10px 14px; font-size: 11.5px; color: #707CA3; line-height: 1.55">
+            Second-invoice paperwork (fabric content / origin) is generated from the fabric master — no retyping.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

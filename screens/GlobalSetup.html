@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Global Setup — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .li { padding: 8px 16px; font-size: 12.5px; color: #3C486E; border-bottom: 1px solid #ECF0FB; display: flex; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; }
+    .lbl { font-size: 10.5px; color: #707CA3; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+    .btn { height: 32px; padding: 0 14px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+    .gbtn { height: 32px; padding: 0 14px; border-radius: 9px; border: 1.5px solid #C7D0EA; background: #FFFFFF; color: #3C486E; font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 8px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; }
+    td { font-size: 12.5px; padding: 8px 10px; border-bottom: 1px solid #ECF0FB; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 10px 0; display: flex; flex-direction: column; gap: 1px; background: #F8FAFF; flex-shrink: 0; }
+    .nv { padding: 6px 16px; font-size: 12px; color: #3C486E; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Admin · Global Setup</div>
+    <div style="margin-left: auto; display: flex; gap: 8px"><span class="role">Administrator</span><span class="role" style="background: #E3EEFF; color: #2A27B8">Phase 0 · Global setup</span></div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv">Costing</div>
+      <div class="nv">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv on">Admin &amp; Users</div>
+    </div>
+    <div style="width: 230px; border-right: 1.5px solid #D5DDF2; background: #F8FAFF; display: flex; flex-direction: column">
+      <div style="padding: 12px 16px 6px" class="lbl">Reference lists</div>
+      <div class="li">Seasons</div>
+      <div class="li">Style Groups</div>
+      <div class="li on">Size Grids</div>
+      <div class="li">Divisions</div>
+      <div class="li">Currencies</div>
+      <div class="li">Payment Terms</div>
+      <div class="li">Carriers</div>
+      <div class="li">Buyers</div>
+      <div class="li">Warehouses</div>
+      <div class="li">Inventory Categories</div>
+      <div class="li">Units of Measure</div>
+      <div class="li">Cutters</div>
+      <div class="li">Sewing Contractors</div>
+      <div class="li" style="border-top: 1.5px solid #D5DDF2; margin-top: 8px; font-weight: 700">System Settings</div>
+    </div>
+
+    <div style="flex: 1; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div>
+          <div style="font-size: 17px; font-weight: 700">Size Grids</div>
+          <div style="font-size: 12px; color: #707CA3">These lists power every dropdown in the portal — set them up once, reuse everywhere</div>
+        </div>
+        <div style="margin-left: auto; display: flex; gap: 8px">
+          <div class="gbtn">Import CSV</div>
+          <div class="btn"><svg width="11" height="11" viewBox="0 0 11 11"><path d="M5.5 1v9M1 5.5h9" stroke="#FFFFFF" stroke-width="1.8"/></svg>New grid</div>
+        </div>
+      </div>
+
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; overflow: hidden">
+        <table>
+          <tr><th style="width: 90px">Grid code</th><th>Description</th><th>S1</th><th>S2</th><th>S3</th><th>S4</th><th>S5</th><th>S6</th><th>S7</th><th>S8</th><th style="width: 70px">Sizes</th><th style="width: 84px">Source</th></tr>
+          <tr><td style="font-weight: 700">G07</td><td>Ladies standard</td><td>XS</td><td>S</td><td>M</td><td>L</td><td>XL</td><td>2XL</td><td>3XL</td><td style="color: #C7D0EA">—</td><td>7</td><td><span class="role" style="background: #E3EEFF; color: #2A27B8">Standard</span></td></tr>
+          <tr><td style="font-weight: 700">G05</td><td>Ladies petite</td><td>XS</td><td>S</td><td>M</td><td>L</td><td>XL</td><td style="color: #C7D0EA">—</td><td style="color: #C7D0EA">—</td><td style="color: #C7D0EA">—</td><td>5</td><td><span class="role" style="background: #E3EEFF; color: #2A27B8">Standard</span></td></tr>
+          <tr><td style="font-weight: 700">G08</td><td>Extended range</td><td>XS</td><td>S</td><td>M</td><td>L</td><td>XL</td><td>1X</td><td>2X</td><td>3X</td><td>8</td><td><span class="role">Manual</span></td></tr>
+        </table>
+      </div>
+
+      <div style="display: flex; gap: 16px; flex: 1">
+        <div style="flex: 1; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-weight: 700; font-size: 13px">Edit grid — G07 · Ladies standard</div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+            <div><div class="lbl">Grid code</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">G07</div></div>
+            <div style="grid-column: span 3"><div class="lbl">Description</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">Ladies standard</div></div>
+            <div><div class="lbl">Size 1</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">XS</div></div>
+            <div><div class="lbl">Size 2</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">S</div></div>
+            <div><div class="lbl">Size 3</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">M</div></div>
+            <div><div class="lbl">Size 4</div><div style="height: 32px; border: 1.5px solid #C7D0EA; border-radius: 9px; display: flex; align-items: center; padding: 0 10px; font-size: 12.5px">L</div></div>
+          </div>
+          <div style="font-size: 11.5px; color: #707CA3">Up to 10 size labels per grid. Standard grids are shared across customers; add custom grids freely — they exist only here.</div>
+          <div style="margin-top: auto; display: flex; gap: 8px; justify-content: flex-end"><div class="gbtn">Cancel</div><div class="btn">Save</div></div>
+        </div>
+
+        <div style="width: 320px; border: 1.5px dashed #C7D0EA; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px">
+          <div class="lbl">System settings (excerpt)</div>
+          <div style="font-size: 12.5px; display: flex; justify-content: space-between"><span>Fabric allowance factor</span><b>6%</b></div>
+          <div style="font-size: 12.5px; display: flex; justify-content: space-between"><span>Presenter / travel per unit</span><b>$1.25</b></div>
+          <div style="font-size: 12.5px; display: flex; justify-content: space-between"><span>Label &amp; polybag per unit</span><b>$0.80</b></div>
+          <div style="font-size: 12.5px; display: flex; justify-content: space-between"><span>Testing allowance per unit</span><b>$0.10</b></div>
+          <div style="font-size: 12.5px; display: flex; justify-content: space-between"><span>Default care-label size</span><b>Std-23</b></div>
+          <div style="font-size: 11.5px; color: #707CA3; margin-top: 4px">Constants live here — no more values hidden in code. Used automatically by Cost Sheets and Cutting Slips.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

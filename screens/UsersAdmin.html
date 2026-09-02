@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1220">
+<title>Users & Roles — SONNET KM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: #16213D; }
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    .bar { height: 54px; border-bottom: 1.5px solid #D5DDF2; display: flex; align-items: center; gap: 12px; padding: 0 18px; background: #FFFFFF; }
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    .rail { width: 190px; border-right: 1.5px solid #D5DDF2; padding: 10px 0; display: flex; flex-direction: column; gap: 1px; background: #F8FAFF; flex-shrink: 0; }
+    .nv { padding: 6px 16px; font-size: 12px; color: #3C486E; }
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+    .btn { height: 32px; padding: 0 14px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 7px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; white-space: nowrap; }
+    td { font-size: 12px; padding: 7px 10px; border-bottom: 1px solid #ECF0FB; }
+    .chip { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 10px; font-size: 10px; font-weight: 700; background: #E3EEFF; color: #2A27B8; margin-right: 4px; }
+    .mut { background: #EDF1FE; color: #3C486E; }
+    .chk { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid #3B37E6; background: #3B37E6; display: inline-flex; align-items: center; justify-content: center; margin-right: 7px; }
+    .chko { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid #C7D0EA; background: #FFFFFF; display: inline-block; margin-right: 7px; }
+    .pr { display: flex; align-items: center; font-size: 11.5px; color: #3C486E; padding: 3px 0; }
+  </style>
+</head>
+<body style="margin:0;background:#E3E9FA;display:flex;justify-content:center;padding:20px 16px">
+<div style="width: 1180px; height: 800px; background: #F3F6FF; box-sizing: border-box; display: flex; flex-direction: column">
+
+  <div class="bar">
+    <svg width="24" height="24" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div style="font-weight: 700; font-size: 14px">SONNET KM</div>
+    <div style="color: #C7D0EA">|</div>
+    <div style="font-size: 13px; color: #3C486E">Admin · Users &amp; Roles</div>
+    <div style="margin-left: auto; display: flex; gap: 8px">
+      <span class="role">Administrator</span>
+      <span class="role" style="background: #E3EEFF; color: #2A27B8">Replaces tbllogin + MNU* flags</span>
+    </div>
+  </div>
+
+  <div style="flex: 1; display: flex; min-height: 0">
+    <div class="rail">
+      <div class="nv">Home</div>
+      <div class="nv">Styles &amp; Colors</div>
+      <div class="nv">Costing</div>
+      <div class="nv">Orders</div>
+      <div class="nv">Cutting Slips</div>
+      <div class="nv">Fabric</div>
+      <div class="nv">Trim</div>
+      <div class="nv">Sewing</div>
+      <div class="nv">Receiving</div>
+      <div class="nv">Inventory</div>
+      <div class="nv">Debit / Credit Notes</div>
+      <div class="nv">Labels &amp; Barcodes</div>
+      <div class="nv">Finance</div>
+      <div class="nv">Reports</div>
+      <div class="nv on">Admin &amp; Users</div>
+    </div>
+
+    <div style="flex: 1; padding: 14px 18px; display: flex; gap: 14px; min-width: 0">
+
+      <div style="flex: 3; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; overflow: hidden; display: flex; flex-direction: column">
+        <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; display: flex; align-items: center">
+          <div style="font-weight: 700; font-size: 13px">Users</div>
+          <div class="btn" style="margin-left: auto; height: 28px">+ Invite user</div>
+        </div>
+        <table>
+          <tr><th>User</th><th>Roles</th><th>Status</th><th>Last sign-in</th></tr>
+          <tr><td style="font-weight: 700">Carla M.</td><td><span class="chip">Purchasing</span><span class="chip mut">Read-only: Reports</span></td><td><span class="chip">Active</span></td><td>today 08:12</td></tr>
+          <tr><td style="font-weight: 700">Christina R.</td><td><span class="chip">Production manager</span></td><td><span class="chip">Active</span></td><td>today 08:40</td></tr>
+          <tr><td style="font-weight: 700">Rachel D.</td><td><span class="chip">Production manager</span><span class="chip">Warehouse</span></td><td><span class="chip">Active</span></td><td>today 07:55</td></tr>
+          <tr><td style="font-weight: 700">Joumana K.</td><td><span class="chip">Finance</span><span class="chip">Admin</span></td><td><span class="chip">Active</span></td><td>today 09:02</td></tr>
+          <tr><td style="font-weight: 700">Mary S.</td><td><span class="chip">Finance</span></td><td><span class="chip">Active</span></td><td>yesterday</td></tr>
+          <tr><td style="font-weight: 700">Reception</td><td><span class="chip">Order entry</span></td><td><span class="chip mut">Reset pending</span></td><td>—</td></tr>
+        </table>
+        <div style="padding: 10px 14px; margin-top: auto; border-top: 1.5px solid #E5EAF8; font-size: 11.5px; color: #707CA3">
+          Migrated users sign in with a forced password reset — plaintext passwords never carried over. Every permission change lands in the audit trail.
+        </div>
+      </div>
+
+      <div style="flex: 2; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 12px 14px; display: flex; flex-direction: column">
+        <div style="font-weight: 700; font-size: 13px; margin-bottom: 2px">Role — Production manager</div>
+        <div style="font-size: 11px; color: #707CA3; margin-bottom: 8px">Bundles the old MNUSTYLEMASTER · MNUCOSTSHEET · MNUCUTTINGSLIP · MNUSEWERALLOC flags</div>
+        <div class="pr"><span class="chk"><svg width="8" height="7" viewBox="0 0 9 7"><path d="M1 3.5 3.4 6 8 1" stroke="#FFFFFF" stroke-width="1.7" fill="none"/></svg></span>styles.manage — create &amp; edit styles, colorways, BOM</div>
+        <div class="pr"><span class="chk"><svg width="8" height="7" viewBox="0 0 9 7"><path d="M1 3.5 3.4 6 8 1" stroke="#FFFFFF" stroke-width="1.7" fill="none"/></svg></span>costing.manage — cost sheets (submit)</div>
+        <div class="pr"><span class="chko"></span>costing.approve — approve cost sheets (Controller only)</div>
+        <div class="pr"><span class="chk"><svg width="8" height="7" viewBox="0 0 9 7"><path d="M1 3.5 3.4 6 8 1" stroke="#FFFFFF" stroke-width="1.7" fill="none"/></svg></span>cutting.manage — cutting slips &amp; confirmations</div>
+        <div class="pr"><span class="chk"><svg width="8" height="7" viewBox="0 0 9 7"><path d="M1 3.5 3.4 6 8 1" stroke="#FFFFFF" stroke-width="1.7" fill="none"/></svg></span>sewing.manage — allocations &amp; receipts</div>
+        <div class="pr"><span class="chko"></span>inventory.adjust — quantity adjustments</div>
+        <div class="pr"><span class="chko"></span>finance.post — A/P &amp; A/R posting</div>
+        <div class="pr"><span class="chko"></span>ops.admin — background jobs &amp; audit</div>
+        <div style="margin-top: auto; display: flex; justify-content: flex-end; gap: 8px; padding-top: 10px">
+          <div class="btn" style="background: #FFFFFF; color: #3C486E; border: 1.5px solid #C7D0EA">Cancel</div>
+          <div class="btn">Save role</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
