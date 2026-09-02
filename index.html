@@ -1,78 +1,45 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SONNET KM — Wireframes</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-<style>
- body{margin:0;background:#F3F6FF;color:#16213D;font-family:"Poppins",system-ui,sans-serif}
- .wrap{max-width:1120px;margin:0 auto;padding:40px 24px 60px}
- .hero{display:flex;gap:14px;align-items:center;margin-bottom:8px}
- h1{font-size:30px;margin:0;font-weight:700}
- .sub{color:#5C6890;font-size:14.5px;max-width:70ch;margin:6px 0 22px}
- .cta{display:inline-flex;align-items:center;gap:8px;background:#3B37E6;color:#fff;font-weight:700;font-size:14px;border-radius:12px;padding:12px 20px;text-decoration:none}
- .cta.g{background:#fff;color:#3C486E;border:1.5px solid #C7D0EA}
- .flow{background:#fff;border:1.5px solid #C7D0EA;border-radius:12px;padding:16px 18px;margin:26px 0;overflow-x:auto}
- .steps{display:flex;align-items:center;gap:6px;min-width:900px}
- .step{flex:1;background:#F8FAFF;border:1.5px solid #C7D0EA;border-radius:10px;padding:10px 12px}
- .step b{font-size:12.5px;display:block}
- .step span{font-size:10.5px;color:#707CA3}
- .arrow{color:#707CA3;font-size:16px}
- h2{font-size:18px;margin:30px 0 12px}
- .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
- .card{background:#fff;border:1.5px solid #C7D0EA;border-radius:12px;padding:13px 15px;text-decoration:none;color:#16213D}
- .card:hover{border-color:#3B37E6}
- .ph{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#3B37E6;font-weight:700;margin-bottom:3px}
- .tt{font-size:13.5px;font-weight:600}
- .note{font-size:12px;color:#707CA3;margin-top:26px;border-top:1.5px solid #D5DDF2;padding-top:14px}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <div class="hero">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SONNET KM — clickable prototype</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head><body>
+<div style="max-width:1120px;margin:0 auto;padding:44px 24px 60px">
+  <div style="display:flex;gap:14px;align-items:center">
     <svg width="46" height="46" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
-    <div><h1>SONNET KM</h1><div style="color:#3B37E6;font-weight:600;font-size:13px">One-stop garment manufacturing portal — wireframes</div></div>
+    <div><h1 style="margin:0;font-size:30px">SONNET KM</h1>
+    <div style="color:#3B37E6;font-weight:600;font-size:13px">One-stop garment manufacturing portal — clickable prototype</div></div>
   </div>
-  <p class="sub">The complete system, A to Z, in one portal: styles, costing, orders, purchasing, cutting, sewing, labels, receiving, warehouse, shipping, notes, finance (A/P · A/R · journal), reports and administration. Everything the legacy EICON apps, GIMS layer and Accpac ERP did — self-contained, nothing external. All names and figures are illustrative samples.</p>
-  <a class="cta" href="walkthrough.html">Start the clickable walkthrough &#8594;</a>
-  <a class="cta g" href="screens/Overview.html" style="margin-left:8px">Flow overview</a>
-
-  <div class="flow"><div class="steps">
-    <div class="step"><b>0–1 · Foundation</b><span>setup · partners · fabric &amp; specs</span></div><div class="arrow">&#8594;</div>
-    <div class="step"><b>2 · Style &amp; costing</b><span>style · BOM · approval gate</span></div><div class="arrow">&#8594;</div>
-    <div class="step"><b>3 · Orders</b><span>client PO · web orders</span></div><div class="arrow">&#8594;</div>
-    <div class="step"><b>4 · Production</b><span>cutting · sewing · labels</span></div><div class="arrow">&#8594;</div>
-    <div class="step"><b>5 · Stock</b><span>receiving · warehouse</span></div><div class="arrow">&#8594;</div>
-    <div class="step"><b>6 · Finance</b><span>shipping · invoicing · close</span></div>
-  </div></div>
-
-  <h2>All screens</h2>
-  <div class="grid">
-    <a class="card" href="screens/Dashboard.html"><div class="ph">All roles</div><div class="tt">Home Dashboard</div></a>
-    <a class="card" href="screens/GlobalSetup.html"><div class="ph">Phase 0 · Admin</div><div class="tt">Global Setup</div></a>
-    <a class="card" href="screens/Partners.html"><div class="ph">Masters</div><div class="tt">Customers & Suppliers</div></a>
-    <a class="card" href="screens/FabricRange.html"><div class="ph">Phase 1 · Fabric team</div><div class="tt">Fabric Range</div></a>
-    <a class="card" href="screens/PatternSpecs.html"><div class="ph">Phase 2 · Design</div><div class="tt">Pattern Specs & Fabric Cards</div></a>
-    <a class="card" href="screens/StyleMaster.html"><div class="ph">Phase 2 · Merchandising</div><div class="tt">Style Master</div></a>
-    <a class="card" href="screens/CostSheet.html"><div class="ph">Phase 2 · Costing / Controller</div><div class="tt">Cost Sheet & Approval</div></a>
-    <a class="card" href="screens/SalesOrder.html"><div class="ph">Phase 3 · Reception</div><div class="tt">Sales Order Entry</div></a>
-    <a class="card" href="screens/WebOrders.html"><div class="ph">Phase 3 · Fulfilment</div><div class="tt">Web Orders Inbox</div></a>
-    <a class="card" href="screens/PurchaseOrders.html"><div class="ph">Phases 1–5 · Purchasing</div><div class="tt">Fabric / Trim Purchase Orders</div></a>
-    <a class="card" href="screens/CuttingSlip.html"><div class="ph">Phase 4 · Production</div><div class="tt">Cutting Slip</div></a>
-    <a class="card" href="screens/SewingAllocation.html"><div class="ph">Phase 4 · Production</div><div class="tt">Sewing Allocation</div></a>
-    <a class="card" href="screens/LabelsBarcodes.html"><div class="ph">Phase 4 · Production</div><div class="tt">Labels & Barcodes</div></a>
-    <a class="card" href="screens/Receiving.html"><div class="ph">Phase 5 · Production</div><div class="tt">Finished Goods Receiving</div></a>
-    <a class="card" href="screens/WarehouseOps.html"><div class="ph">Phase 5 · Warehouse</div><div class="tt">Warehouse Operations</div></a>
-    <a class="card" href="screens/Shipping.html"><div class="ph">Phase 6 · Shipping office</div><div class="tt">Shipping & SKU Correction</div></a>
-    <a class="card" href="screens/Notes.html"><div class="ph">Phase 6 · Purchasing / Finance</div><div class="tt">Debit / Credit Notes</div></a>
-    <a class="card" href="screens/Finance.html"><div class="ph">Phase 6 · Finance</div><div class="tt">Finance — A/P · A/R · Journal</div></a>
-    <a class="card" href="screens/Reports.html"><div class="ph">All roles</div><div class="tt">Reports — OTS · Aging · Monthly</div></a>
-    <a class="card" href="screens/UsersAdmin.html"><div class="ph">Admin</div><div class="tt">Users & Roles</div></a>
-    <a class="card" href="screens/Ops.html"><div class="ph">Admin</div><div class="tt">Operations — Jobs & Audit</div></a>
+  <p style="color:#5C6890;font-size:14.5px;max-width:72ch">Every module below opens a working screen: the left menu navigates anywhere, listings open records, <b>+ New</b> opens the form, and <b>Save / Cancel / Close</b> return to the listing. Self-contained — the whole operation lives here, nothing external. All names and figures are illustrative samples.</p>
+  <a class="btn" href="dashboard/index.html">Open the portal &#8594;</a>
+  <h2 style="font-size:18px;margin:30px 0 12px">All modules</h2>
+  <div class="grid3">
+    <a class="tile" href="dashboard/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Home</div></a>
+    <a class="tile" href="styles/index.html"><div class="ph">Christina R. · Merchandising</div><div class="tt">Styles & Colors</div></a>
+    <a class="tile" href="specs/index.html"><div class="ph">Design team</div><div class="tt">Pattern Specs</div></a>
+    <a class="tile" href="costing/index.html"><div class="ph">Joumana K. · Controller</div><div class="tt">Costing</div></a>
+    <a class="tile" href="orders/index.html"><div class="ph">Reception</div><div class="tt">Orders</div></a>
+    <a class="tile" href="weborders/index.html"><div class="ph">Fulfilment</div><div class="tt">Web Orders</div></a>
+    <a class="tile" href="cutting/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Cutting Slips</div></a>
+    <a class="tile" href="sewing/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Sewing</div></a>
+    <a class="tile" href="labels/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Labels & Barcodes</div></a>
+    <a class="tile" href="receiving/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Receiving</div></a>
+    <a class="tile" href="fabric/index.html"><div class="ph">Carla M. · Fabric team</div><div class="tt">Fabric</div></a>
+    <a class="tile" href="trim/index.html"><div class="ph">Carla M. · Fabric team</div><div class="tt">Trim</div></a>
+    <a class="tile" href="purchasing/index.html"><div class="ph">Purchasing</div><div class="tt">Purchase Orders</div></a>
+    <a class="tile" href="inventory/index.html"><div class="ph">Warehouse</div><div class="tt">Inventory</div></a>
+    <a class="tile" href="warehouse/index.html"><div class="ph">Warehouse</div><div class="tt">Warehouse Ops</div></a>
+    <a class="tile" href="shipping/index.html"><div class="ph">Shipping office</div><div class="tt">Shipping</div></a>
+    <a class="tile" href="notes/index.html"><div class="ph">Purchasing / Finance</div><div class="tt">Debit / Credit Notes</div></a>
+    <a class="tile" href="finance/index.html"><div class="ph">Joumana K. / Mary S. · Finance</div><div class="tt">Finance</div></a>
+    <a class="tile" href="reports/index.html"><div class="ph">All roles</div><div class="tt">Reports</div></a>
+    <a class="tile" href="partners/index.html"><div class="ph">Merchandising</div><div class="tt">Partners</div></a>
+    <a class="tile" href="setup/index.html"><div class="ph">Administrator</div><div class="tt">Setup</div></a>
+    <a class="tile" href="users/index.html"><div class="ph">Administrator</div><div class="tt">Users & Roles</div></a>
+    <a class="tile" href="ops/index.html"><div class="ph">Administrator</div><div class="tt">Operations</div></a>
   </div>
-
-  <div class="note">SONNET KM wireframes · self-contained — open index.html locally or host the folder anywhere. Built from the operational-flow specification; companion documents: Data Atlas &amp; Rebuild Blueprint.</div>
+  <p style="font-size:12px;color:#707CA3;margin-top:26px;border-top:1.5px solid #D5DDF2;padding-top:14px">
+    Open <b>index.html</b> locally or host this folder on any static server. 43 pages.
+  </p>
 </div>
-</body>
-</html>
+</body></html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operations — SONNET KM</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/app.css">
+</head><body>
+<div class="app">
+  <nav class="rail">
+    <a class="brandbox" href="../dashboard/index.html" style="color:#16213D">
+      <svg width="26" height="26" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+      <b>SONNET KM</b></a>
+      <a class="nv" href="../dashboard/index.html">Home</a>
+      <a class="nv" href="../styles/index.html">Styles & Colors</a>
+      <a class="nv" href="../specs/index.html">Pattern Specs</a>
+      <a class="nv" href="../costing/index.html">Costing</a>
+      <a class="nv" href="../orders/index.html">Orders</a>
+      <a class="nv" href="../weborders/index.html">Web Orders</a>
+      <a class="nv" href="../cutting/index.html">Cutting Slips</a>
+      <a class="nv" href="../sewing/index.html">Sewing</a>
+      <a class="nv" href="../labels/index.html">Labels & Barcodes</a>
+      <a class="nv" href="../receiving/index.html">Receiving</a>
+      <a class="nv" href="../fabric/index.html">Fabric</a>
+      <a class="nv" href="../trim/index.html">Trim</a>
+      <a class="nv" href="../purchasing/index.html">Purchase Orders</a>
+      <a class="nv" href="../inventory/index.html">Inventory</a>
+      <a class="nv" href="../warehouse/index.html">Warehouse Ops</a>
+      <a class="nv" href="../shipping/index.html">Shipping</a>
+      <a class="nv" href="../notes/index.html">Debit / Credit Notes</a>
+      <a class="nv" href="../finance/index.html">Finance</a>
+      <a class="nv" href="../reports/index.html">Reports</a>
+      <a class="nv" href="../partners/index.html">Partners</a>
+      <a class="nv" href="../setup/index.html">Setup</a>
+      <a class="nv" href="../users/index.html">Users & Roles</a>
+      <a class="nv on" href="../ops/index.html">Operations</a>
+  </nav>
+  <div class="main">
+    <div class="bar">
+      <div class="crumb"><b>Operations</b></div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <span class="role">Administrator</span>
+        <a class="gbtn" style="height:28px" href="../index.html">All screens</a>
+      </div>
+    </div>
+    <div class="body">
+<style>.m9 {}
+
+    
+    a { color: #3B37E6; } a:hover { color: #2A27B8; }
+    
+    .role { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #EDF1FE; color: #3C486E; font-size: 11px; font-weight: 600; }
+    
+    
+    .on { background: #E3EEFF; color: #2A27B8; font-weight: 700; border-right: 3px solid #3B37E6; }
+    .btn { height: 30px; padding: 0 13px; border-radius: 9px; background: #3B37E6; color: #FFFFFF; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; }
+    .gbtn { height: 26px; padding: 0 11px; border-radius: 9px; border: 1.5px solid #C7D0EA; background: #FFFFFF; color: #3C486E; font-size: 11.5px; font-weight: 600; display: inline-flex; align-items: center; }
+    table { border-collapse: collapse; width: 100%; background: #FFFFFF; }
+    th { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #707CA3; text-align: left; padding: 7px 10px; border-bottom: 1.5px solid #D5DDF2; background: #F8FAFF; white-space: nowrap; }
+    td { font-size: 12px; padding: 7px 10px; border-bottom: 1px solid #ECF0FB; }
+    .chip { display: inline-flex; align-items: center; height: 20px; padding: 0 9px; border-radius: 10px; font-size: 10.5px; font-weight: 700; }
+    .ok { background: #E3EEFF; color: #2A27B8; } .warn { background: #FCF3E4; color: #8A6420; }
+    .dev { background: #131C36; color: #C4CCE9; font-family: "SF Mono", "Cascadia Code", Consolas, monospace; font-size: 10.5px; line-height: 1.7; padding: 10px 16px; }
+    .dev b { color: #9895FF; font-weight: 600; }
+  </style>
+<div class="m9" style="background:#fff;border:1.5px solid #C7D0EA;border-radius:12px;overflow:hidden"><div style="flex: 1; display: flex; min-height: 0">
+    
+
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 12px; padding: 14px 18px; min-width: 0">
+
+      <div style="display: flex; gap: 12px">
+        <div style="flex: 3; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; overflow: hidden">
+          <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; display: flex; align-items: center">
+            <div style="font-weight: 700; font-size: 13px">Background jobs</div>
+            <div class="btn" style="margin-left: auto">Run now…</div>
+          </div>
+          <table>
+            <tr><th>Job</th><th>Schedule</th><th>Last run</th><th>Status</th></tr>
+            <tr><td>OTS snapshot rebuild</td><td>nightly 02:00</td><td>02:00 today · 3.1s</td><td><span class="chip ok">Clean</span></td></tr>
+            <tr><td>Report cache refresh</td><td>hourly</td><td>09:00 · 0.8s</td><td><span class="chip ok">Clean</span></td></tr>
+            <tr><td>Database backup</td><td>nightly 01:00</td><td>01:00 today · verified</td><td><span class="chip ok">Clean</span></td></tr>
+            <tr><td>Label print queue</td><td>continuous</td><td>2 jobs waiting</td><td><span class="chip warn">Busy</span></td></tr>
+          </table>
+        </div>
+        <div style="flex: 2; border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; padding: 11px 14px">
+          <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px">Document sequences</div>
+          <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 2px 0"><span>Sales order (RD)</span><b>17953</b></div>
+          <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 2px 0"><span>Cutting slip</span><b>4473</b></div>
+          <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 2px 0"><span>Fabric PO / Trim PO</span><b>2256 / 1189</b></div>
+          <div style="font-size: 12px; color: #3C486E; display: flex; justify-content: space-between; padding: 2px 0"><span>Invoice / Journal</span><b>88413 / 2215</b></div>
+          <div style="font-size: 11px; color: #707CA3; margin-top: 4px">Database sequences — no MAX(ID)+1, no collisions, gaps visible here.</div>
+        </div>
+      </div>
+
+      <div style="border: 1.5px solid #C7D0EA; border-radius: 12px; background: #FFFFFF; overflow: hidden; flex: 1; display: flex; flex-direction: column">
+        <div style="padding: 10px 14px; border-bottom: 1.5px solid #E5EAF8; display: flex; align-items: center; gap: 10px">
+          <div style="font-weight: 700; font-size: 13px">Audit trail — who did what</div>
+          <div style="margin-left: auto; font-size: 11px; color: #707CA3">filter by user · module · date</div>
+        </div>
+        <table>
+          <tr><th>When</th><th>User</th><th>Action</th><th>Entity</th><th></th></tr>
+          <tr><td>09:41</td><td>Rachel D.</td><td>created</td><td>FG receipt — cut 4471, 695 pcs</td><td><span class="gbtn">View diff</span></td></tr>
+          <tr><td>09:12</td><td>Reception</td><td>created</td><td>Sales order RD 17952</td><td><span class="gbtn">View diff</span></td></tr>
+          <tr><td>08:47</td><td>Joumana K.</td><td>approved</td><td>Cost sheet — style 18129</td><td><span class="gbtn">View diff</span></td></tr>
+          <tr><td>08:31</td><td>Christina R.</td><td>updated</td><td>Style 18133T — colorway 95 price</td><td><span class="gbtn">View diff</span></td></tr>
+          <tr><td>Yesterday</td><td>Joumana K.</td><td>role change</td><td>User “Reception” → Order entry</td><td><span class="gbtn">View diff</span></td></tr>
+        </table>
+      </div>
+
+      <div class="dev">
+        <b>GET</b> /api/v1/ops/jobs · <b>POST</b> /ops/jobs/{id}/run (202) · <b>GET</b> /ops/sequences · <b>GET</b> /ops/audit?user=&amp;module=&amp;cursor= · rq keys <b>['ops','jobs']</b> / <b>['ops','audit',filters]</b><br>
+        admin-gated: <b>ops.admin</b> · audit rows are immutable; "View diff" renders the JSONB before/after · this screen replaces every legacy error-log MDB and temp-table ritual.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</body></html>

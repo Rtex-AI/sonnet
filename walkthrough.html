@@ -1,64 +1,45 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1220">
-<title>Walkthrough — SONNET KM</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-<style>
- body{margin:0;background:#E3E9FA;font-family:"Poppins",system-ui,sans-serif}
- .top{background:#131C36;color:#E5EAF8;padding:12px 16px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;position:sticky;top:0;z-index:5}
- .brand{display:flex;gap:9px;align-items:center;font-weight:700;font-size:13px;white-space:nowrap}
- .chips{display:flex;gap:5px;flex-wrap:wrap}
- .chip{height:26px;padding:0 10px;border-radius:13px;font:600 11px "Poppins",sans-serif;display:inline-flex;align-items:center;gap:5px;cursor:pointer;border:1.5px solid #3D4A78;background:#1D2748;color:#C4CCE9}
- .chip.on{background:#3B37E6;border-color:#3B37E6;color:#fff}
- .n{width:15px;height:15px;border-radius:8px;background:rgba(0,0,0,.12);display:inline-flex;align-items:center;justify-content:center;font-size:9.5px}
- .nav{height:26px;width:32px;border:1.5px solid #3D4A78;border-radius:9px;background:#1D2748;color:#C4CCE9;cursor:pointer;font-size:13px}
- iframe{display:block;width:1220px;max-width:100%;height:880px;border:0;margin:14px auto;background:#F3F6FF;border-radius:10px;box-shadow:0 8px 30px rgba(19,28,54,.12)}
- a.back{color:#9895FF;font-size:11px;margin-left:auto;align-self:center}
-</style>
-</head>
-<body>
-<div class="top">
-  <div class="brand"><svg width="22" height="22" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>SONNET KM · walkthrough
-    <button class="nav" id="prev">&#8249;</button><button class="nav" id="next">&#8250;</button>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SONNET KM — clickable prototype</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head><body>
+<div style="max-width:1120px;margin:0 auto;padding:44px 24px 60px">
+  <div style="display:flex;gap:14px;align-items:center">
+    <svg width="46" height="46" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <div><h1 style="margin:0;font-size:30px">SONNET KM</h1>
+    <div style="color:#3B37E6;font-weight:600;font-size:13px">One-stop garment manufacturing portal — clickable prototype</div></div>
   </div>
-  <div class="chips" id="chips">
-      <button class="chip" data-i="0"><span class="n">1</span>Home Dashboard</button>
-      <button class="chip" data-i="1"><span class="n">2</span>Global Setup</button>
-      <button class="chip" data-i="2"><span class="n">3</span>Customers & Suppliers</button>
-      <button class="chip" data-i="3"><span class="n">4</span>Fabric Range</button>
-      <button class="chip" data-i="4"><span class="n">5</span>Pattern Specs & Fabric Cards</button>
-      <button class="chip" data-i="5"><span class="n">6</span>Style Master</button>
-      <button class="chip" data-i="6"><span class="n">7</span>Cost Sheet & Approval</button>
-      <button class="chip" data-i="7"><span class="n">8</span>Sales Order Entry</button>
-      <button class="chip" data-i="8"><span class="n">9</span>Web Orders Inbox</button>
-      <button class="chip" data-i="9"><span class="n">10</span>Fabric / Trim Purchase Orders</button>
-      <button class="chip" data-i="10"><span class="n">11</span>Cutting Slip</button>
-      <button class="chip" data-i="11"><span class="n">12</span>Sewing Allocation</button>
-      <button class="chip" data-i="12"><span class="n">13</span>Labels & Barcodes</button>
-      <button class="chip" data-i="13"><span class="n">14</span>Finished Goods Receiving</button>
-      <button class="chip" data-i="14"><span class="n">15</span>Warehouse Operations</button>
-      <button class="chip" data-i="15"><span class="n">16</span>Shipping & SKU Correction</button>
-      <button class="chip" data-i="16"><span class="n">17</span>Debit / Credit Notes</button>
-      <button class="chip" data-i="17"><span class="n">18</span>Finance — A/P · A/R · Journal</button>
-      <button class="chip" data-i="18"><span class="n">19</span>Reports — OTS · Aging · Monthly</button>
-      <button class="chip" data-i="19"><span class="n">20</span>Users & Roles</button>
-      <button class="chip" data-i="20"><span class="n">21</span>Operations — Jobs & Audit</button>
+  <p style="color:#5C6890;font-size:14.5px;max-width:72ch">Every module below opens a working screen: the left menu navigates anywhere, listings open records, <b>+ New</b> opens the form, and <b>Save / Cancel / Close</b> return to the listing. Self-contained — the whole operation lives here, nothing external. All names and figures are illustrative samples.</p>
+  <a class="btn" href="dashboard/index.html">Open the portal &#8594;</a>
+  <h2 style="font-size:18px;margin:30px 0 12px">All modules</h2>
+  <div class="grid3">
+    <a class="tile" href="dashboard/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Home</div></a>
+    <a class="tile" href="styles/index.html"><div class="ph">Christina R. · Merchandising</div><div class="tt">Styles & Colors</div></a>
+    <a class="tile" href="specs/index.html"><div class="ph">Design team</div><div class="tt">Pattern Specs</div></a>
+    <a class="tile" href="costing/index.html"><div class="ph">Joumana K. · Controller</div><div class="tt">Costing</div></a>
+    <a class="tile" href="orders/index.html"><div class="ph">Reception</div><div class="tt">Orders</div></a>
+    <a class="tile" href="weborders/index.html"><div class="ph">Fulfilment</div><div class="tt">Web Orders</div></a>
+    <a class="tile" href="cutting/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Cutting Slips</div></a>
+    <a class="tile" href="sewing/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Sewing</div></a>
+    <a class="tile" href="labels/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Labels & Barcodes</div></a>
+    <a class="tile" href="receiving/index.html"><div class="ph">Rachel D. · Production</div><div class="tt">Receiving</div></a>
+    <a class="tile" href="fabric/index.html"><div class="ph">Carla M. · Fabric team</div><div class="tt">Fabric</div></a>
+    <a class="tile" href="trim/index.html"><div class="ph">Carla M. · Fabric team</div><div class="tt">Trim</div></a>
+    <a class="tile" href="purchasing/index.html"><div class="ph">Purchasing</div><div class="tt">Purchase Orders</div></a>
+    <a class="tile" href="inventory/index.html"><div class="ph">Warehouse</div><div class="tt">Inventory</div></a>
+    <a class="tile" href="warehouse/index.html"><div class="ph">Warehouse</div><div class="tt">Warehouse Ops</div></a>
+    <a class="tile" href="shipping/index.html"><div class="ph">Shipping office</div><div class="tt">Shipping</div></a>
+    <a class="tile" href="notes/index.html"><div class="ph">Purchasing / Finance</div><div class="tt">Debit / Credit Notes</div></a>
+    <a class="tile" href="finance/index.html"><div class="ph">Joumana K. / Mary S. · Finance</div><div class="tt">Finance</div></a>
+    <a class="tile" href="reports/index.html"><div class="ph">All roles</div><div class="tt">Reports</div></a>
+    <a class="tile" href="partners/index.html"><div class="ph">Merchandising</div><div class="tt">Partners</div></a>
+    <a class="tile" href="setup/index.html"><div class="ph">Administrator</div><div class="tt">Setup</div></a>
+    <a class="tile" href="users/index.html"><div class="ph">Administrator</div><div class="tt">Users & Roles</div></a>
+    <a class="tile" href="ops/index.html"><div class="ph">Administrator</div><div class="tt">Operations</div></a>
   </div>
-  <a class="back" href="index.html">&#8592; back to index</a>
+  <p style="font-size:12px;color:#707CA3;margin-top:26px;border-top:1.5px solid #D5DDF2;padding-top:14px">
+    Open <b>index.html</b> locally or host this folder on any static server. 43 pages.
+  </p>
 </div>
-<iframe id="frame" src="screens/Dashboard.html" title="screen"></iframe>
-<script>
- const files=["screens/Dashboard.html","screens/GlobalSetup.html","screens/Partners.html","screens/FabricRange.html","screens/PatternSpecs.html","screens/StyleMaster.html","screens/CostSheet.html","screens/SalesOrder.html","screens/WebOrders.html","screens/PurchaseOrders.html","screens/CuttingSlip.html","screens/SewingAllocation.html","screens/LabelsBarcodes.html","screens/Receiving.html","screens/WarehouseOps.html","screens/Shipping.html","screens/Notes.html","screens/Finance.html","screens/Reports.html","screens/UsersAdmin.html","screens/Ops.html"];
- let i=0; const chips=[...document.querySelectorAll('.chip')];
- function go(n){ i=Math.max(0,Math.min(files.length-1,n));
-   document.getElementById('frame').src=files[i];
-   chips.forEach((c,j)=>c.classList.toggle('on',j===i)); }
- chips.forEach(c=>c.onclick=()=>go(+c.dataset.i));
- document.getElementById('prev').onclick=()=>go(i-1);
- document.getElementById('next').onclick=()=>go(i+1);
- go(0);
-</script>
-</body>
-</html>
+</body></html>
