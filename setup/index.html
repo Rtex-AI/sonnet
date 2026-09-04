@@ -2,70 +2,125 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Setup — SONNET KM</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="../assets/app.css">
-</head><body>
-<div class="app">
-  <nav class="rail">
-    <a class="brandbox" href="../dashboard/index.html" style="color:#16213D">
-      <svg width="26" height="26" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
-      <b>SONNET KM</b></a>
-      <a class="nv" href="../dashboard/index.html">Home</a>
-      <a class="nv" href="../styles/index.html">Styles & Colors</a>
-      <a class="nv" href="../specs/index.html">Pattern Specs</a>
-      <a class="nv" href="../costing/index.html">Costing</a>
-      <a class="nv" href="../orders/index.html">Orders</a>
-      <a class="nv" href="../weborders/index.html">Web Orders</a>
-      <a class="nv" href="../cutting/index.html">Cutting Slips</a>
-      <a class="nv" href="../sewing/index.html">Sewing</a>
-      <a class="nv" href="../labels/index.html">Labels & Barcodes</a>
-      <a class="nv" href="../receiving/index.html">Receiving</a>
-      <a class="nv" href="../fabric/index.html">Fabric</a>
-      <a class="nv" href="../trim/index.html">Trim</a>
-      <a class="nv" href="../purchasing/index.html">Purchase Orders</a>
-      <a class="nv" href="../inventory/index.html">Inventory</a>
-      <a class="nv" href="../warehouse/index.html">Warehouse Ops</a>
-      <a class="nv" href="../shipping/index.html">Shipping</a>
-      <a class="nv" href="../notes/index.html">Debit / Credit Notes</a>
-      <a class="nv" href="../finance/index.html">Finance</a>
-      <a class="nv" href="../reports/index.html">Reports</a>
-      <a class="nv" href="../partners/index.html">Partners</a>
-      <a class="nv on" href="../setup/index.html">Setup</a>
-      <a class="nv" href="../users/index.html">Users & Roles</a>
-      <a class="nv" href="../ops/index.html">Operations</a>
-  </nav>
-  <div class="main">
-    <div class="bar">
-      <div class="crumb"><b>Setup</b></div>
-      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
-        <span class="role">Administrator</span>
-        <a class="gbtn" style="height:28px" href="../index.html">All screens</a>
-      </div>
-    </div>
-    <div class="body">
-      <div class="head">
-        <h1 class="h1">Setup</h1>
-        <span class="hint">reference lists every dropdown in the system draws from</span>
-        <a class="btn" style="margin-left:auto" href="form.html">+ New list entry</a>
-      </div>
-      <div class="filters">
-        <span class="in">Search list…</span>
-      </div>
-      <div class="card">
-        <table><thead><tr><th>Reference list</th><th>Entries</th><th>Used by</th><th>Owner</th><th>Updated</th></tr></thead><tbody>
-        <tr><td><a href="form.html"><b>Seasons</b></a></td><td>14</td><td>Styles · Orders · Reports</td><td>Admin</td><td>2w ago</td></tr>
-        <tr><td><a href="form.html"><b>Style groups</b></a></td><td>9</td><td>Styles · Costing</td><td>Admin</td><td>1mo ago</td></tr>
-        <tr><td><a href="form.html"><b>Size grids</b></a></td><td>6</td><td>Everything with sizes</td><td>Admin</td><td>3d ago</td></tr>
-        <tr><td><a href="form.html"><b>Warehouses</b></a></td><td>3</td><td>Inventory · Receiving · Shipping</td><td>Admin</td><td>6mo ago</td></tr>
-        <tr><td><a href="form.html"><b>Inventory categories</b></a></td><td>7</td><td>Inventory · Receiving</td><td>Admin</td><td>2mo ago</td></tr>
-        <tr><td><a href="form.html"><b>Units of measure</b></a></td><td>5</td><td>Trim · Fabric</td><td>Admin</td><td>1y ago</td></tr>
-        <tr><td><a href="form.html"><b>Cutters</b></a></td><td>4</td><td>Cutting slips</td><td>Admin</td><td>3w ago</td></tr>
-        <tr><td><a href="form.html"><b>Sewing contractors</b></a></td><td>6</td><td>Sewing allocations</td><td>Admin</td><td>3w ago</td></tr>
-        <tr><td><a href="form.html"><b>Currencies · Terms · Carriers</b></a></td><td>18</td><td>Purchasing · Finance</td><td>Admin</td><td>5mo ago</td></tr>
-        <tr><td><a href="form.html"><b>System settings</b></a></td><td>—</td><td>Allowances, fixed costs, defaults</td><td>Admin</td><td>1w ago</td></tr>
-        </tbody></table>
-        <div class="foot">10 records · click any row to open it</div>
-      </div>
-    </div>
-  </div>
+<link rel="stylesheet" href="../assets/app.css"></head><body>
+<div class="app"><nav class="rail">
+<a class="brandbox" href="../dashboard/index.html" style="color:#16213D">
+<svg width="26" height="26" viewBox="0 0 34 34"><rect x="1" y="1" width="32" height="32" rx="7" fill="#3B37E6"/><path d="M9 21c3-7 6 3 9-4s5 1 7-6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+<b>SONNET KM</b></a>
+<div class="sec">Home<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../dashboard/index.html">Dashboard</a>
 </div>
-</body></html>
+<div class="sec">Setup & masters<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../setup-seasons/index.html">Seasons<span class="gims">GIMS</span></a>
+<a class="nv" href="../setup-groups/index.html">Style groups<span class="gims">GIMS</span></a>
+<a class="nv" href="../setup-grids/index.html">Size grids<span class="gims">GIMS</span></a>
+<a class="nv" href="../setup-colours/index.html">Colour catalogue<span class="gims">GIMS</span></a>
+<a class="nv" href="../setup-points/index.html">Measurement points</a>
+<a class="nv" href="../setup-grades/index.html">Gradation rules</a>
+<a class="nv" href="../setup-divisions/index.html">Divisions</a>
+<a class="nv" href="../setup-currencies/index.html">Currencies</a>
+<a class="nv" href="../setup-terms/index.html">Payment terms</a>
+<a class="nv" href="../setup-carriers/index.html">Carriers</a>
+<a class="nv" href="../setup-buyers/index.html">Buyers</a>
+<a class="nv" href="../setup-warehouses/index.html">Warehouses</a>
+<a class="nv" href="../setup-categories/index.html">Inventory categories</a>
+<a class="nv" href="../setup-uom/index.html">Units of measure</a>
+<a class="nv" href="../setup-cutters/index.html">Cutters</a>
+<a class="nv" href="../setup-sewers/index.html">Sewing contractors</a>
+<a class="nv" href="../setup-settings/index.html">System settings</a>
+</div>
+<div class="sec">Partners<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../partners/index.html">Customers<span class="gims">GIMS</span></a>
+<a class="nv" href="../suppliers/index.html">Suppliers</a>
+</div>
+<div class="sec">Product<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../styles/index.html">Styles & colours<span class="gims">GIMS</span></a>
+<a class="nv" href="../specs/index.html">Pattern specs</a>
+<a class="nv" href="../costing/index.html">Costing</a>
+</div>
+<div class="sec">Sales<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../orders/index.html">Orders<span class="gims">GIMS</span></a>
+<a class="nv" href="../weborders/index.html">Web orders</a>
+</div>
+<div class="sec">Materials<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../fabric/index.html">Fabric ranges</a>
+<a class="nv" href="../trim/index.html">Trims</a>
+</div>
+<div class="sec">Purchasing<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../purchasing/index.html">Purchase orders</a>
+</div>
+<div class="sec">Production<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../cutting/index.html">Cutting slips</a>
+<a class="nv" href="../sewing/index.html">Sewing</a>
+<a class="nv" href="../labels/index.html">Labels & barcodes</a>
+</div>
+<div class="sec">Stock<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../receiving/index.html">Receiving</a>
+<a class="nv" href="../inventory/index.html">Inventory</a>
+<a class="nv" href="../warehouse/index.html">Warehouse ops</a>
+</div>
+<div class="sec">Dispatch<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../shipping/index.html">Shipping</a>
+<a class="nv" href="../notes/index.html">Debit / credit notes</a>
+</div>
+<div class="sec">Insight<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../reports/index.html">Reports</a>
+</div>
+<div class="sec">Administration<span class="car">&#9660;</span></div><div class="grp">
+<a class="nv" href="../users/index.html">Users & roles</a>
+<a class="nv" href="../sequences/index.html">Document sequences<span class="gims">GIMS</span></a>
+<a class="nv" href="../ops/index.html">Operations</a>
+</div></nav>
+<div class="main"><div class="bar"><div class="crumb"><b></b> › <b>Setup</b></div>
+<div style="margin-left:auto;display:flex;gap:8px;align-items:center"><span class="role">Administrator</span>
+<a class="gbtn" style="height:28px" href="../index.html">All screens</a></div></div>
+<div class="body"><div class="head"><h1 class="h1">Setup</h1><span class="hint">reference lists every dropdown in the system draws from</span><a class="btn" style="margin-left:auto" href="form.html">+ New list entry</a></div><div class="filters"><span class="in">Search list…</span></div><div class="card"><table><thead><tr><th>Reference list</th><th>Entries</th><th>Used by</th><th>Owner</th><th>Updated</th></tr></thead><tbody><tr><td><a href="form.html"><b>Seasons</b></a></td><td>14</td><td>Styles · Orders · Reports</td><td>Admin</td><td>2w ago</td></tr><tr><td><a href="form.html"><b>Style groups</b></a></td><td>9</td><td>Styles · Costing</td><td>Admin</td><td>1mo ago</td></tr><tr><td><a href="form.html"><b>Size grids</b></a></td><td>6</td><td>Everything with sizes</td><td>Admin</td><td>3d ago</td></tr><tr><td><a href="form.html"><b>Warehouses</b></a></td><td>3</td><td>Inventory · Receiving · Shipping</td><td>Admin</td><td>6mo ago</td></tr><tr><td><a href="form.html"><b>Inventory categories</b></a></td><td>7</td><td>Inventory · Receiving</td><td>Admin</td><td>2mo ago</td></tr><tr><td><a href="form.html"><b>Units of measure</b></a></td><td>5</td><td>Trim · Fabric</td><td>Admin</td><td>1y ago</td></tr><tr><td><a href="form.html"><b>Cutters</b></a></td><td>4</td><td>Cutting slips</td><td>Admin</td><td>3w ago</td></tr><tr><td><a href="form.html"><b>Sewing contractors</b></a></td><td>6</td><td>Sewing allocations</td><td>Admin</td><td>3w ago</td></tr><tr><td><a href="form.html"><b>Currencies · Terms · Carriers</b></a></td><td>18</td><td>Purchasing · Shipping</td><td>Admin</td><td>5mo ago</td></tr><tr><td><a href="form.html"><b>System settings</b></a></td><td>—</td><td>Allowances, fixed costs, defaults</td><td>Admin</td><td>1w ago</td></tr></tbody></table><div class="foot">10 records · click a row to open it</div></div></div></div></div>
+<script>
+(function(){
+ if(window.__skmBound) return; window.__skmBound = true;   /* bind ONCE — render() must not re-bind */
+ document.addEventListener('click', function(e){
+   /* --- tabs --- */
+   var b = e.target.closest('.tb');
+   if(b){
+     var bar = b.closest('.tabbar'), wrap = bar.parentElement;
+     Array.prototype.forEach.call(bar.querySelectorAll('.tb'), function(x){ x.classList.toggle('on', x===b); });
+     Array.prototype.forEach.call(wrap.children, function(p){
+       if(p.classList && p.classList.contains('pane')) p.classList.toggle('on', p.dataset.tab === b.dataset.tab);
+     });
+     return;
+   }
+   /* --- add row --- */
+   var a = e.target.closest('[data-addrow]');
+   if(a){
+     e.preventDefault();
+     var tb = a.closest('.gridwrap').querySelector('tbody');
+     var r = tb.rows[tb.rows.length-1].cloneNode(true);
+     Array.prototype.forEach.call(r.querySelectorAll('input'), function(i){ i.value=''; });
+     tb.appendChild(r);
+     return;
+   }
+   /* --- collapse / expand a menu section --- */
+   var s = e.target.closest('.sec');
+   if(s){
+     var g = s.nextElementSibling;
+     if(!g || !g.classList.contains('grp')) return;
+     var hidden = g.classList.toggle('hide');
+     s.classList.toggle('closed', hidden);
+     try{ localStorage.setItem('skm-' + s.textContent.trim(), hidden ? '0' : '1'); }catch(err){}
+   }
+ });
+ function restore(){
+   Array.prototype.forEach.call(document.querySelectorAll('.sec'), function(s){
+     var g = s.nextElementSibling;
+     if(!g || !g.classList.contains('grp')) return;
+     var open = true;
+     try{ open = localStorage.getItem('skm-' + s.textContent.trim()) !== '0'; }catch(err){}
+     if(g.querySelector('.nv.on')) open = true;          /* never hide the section you are in */
+     g.classList.toggle('hide', !open);
+     s.classList.toggle('closed', !open);
+   });
+ }
+ if(document.readyState !== 'loading') restore(); else addEventListener('DOMContentLoaded', restore);
+ window.__skmInit = restore;   /* SPA calls this after each route change — safe, it only re-applies state */
+})();
+</script></body></html>

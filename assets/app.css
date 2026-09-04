@@ -62,3 +62,28 @@ tbody tr:last-child td{border-bottom:0}
 .sechead{padding:11px 16px;border-bottom:1.5px solid #E5EAF8;font-weight:700;font-size:13px;background:#fff;display:flex;align-items:center;gap:10px}
 .note{font-size:11.5px;color:#707CA3;padding:10px 16px}
 .matrix input{width:100%;height:30px;text-align:right;border:1.2px solid #C7D0EA;border-radius:6px;padding:0 6px;font:inherit;font-size:12px}
+
+.rail{padding-bottom:30px}
+.sec{font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#9FA9CB;font-weight:700;padding:12px 16px 4px}
+.nv{display:flex;align-items:center;gap:6px;padding:6px 16px 6px 20px;font-size:12px;color:#3C486E;border-right:3px solid transparent}
+.gims{margin-left:auto;font-size:8.5px;font-weight:700;letter-spacing:.04em;background:#EDE9FE;color:#5B21B6;border-radius:8px;padding:1px 6px}
+.nv.on .gims{background:#fff}
+.legend{display:flex;gap:14px;align-items:center;font-size:11.5px;color:#707CA3;margin-bottom:12px;flex-wrap:wrap}
+.badge{font-size:9px;font-weight:700;background:#EDE9FE;color:#5B21B6;border-radius:8px;padding:2px 7px;letter-spacing:.04em}
+.badge.e{background:#E3EEFF;color:#2A27B8}
+
+.sec{display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+.sec .car{margin-left:auto;transition:transform .15s;font-size:9px;color:#9FA9CB}
+.sec.closed .car{transform:rotate(-90deg)}
+.grp{overflow:hidden}
+.grp.hide{display:none}
+.tabbar{display:flex;gap:2px;border-bottom:1.5px solid #D5DDF2;margin:0 0 14px;flex-wrap:wrap;background:#fff;border-radius:12px 12px 0 0;padding:0 6px}
+.tb{padding:9px 15px;font-size:12.5px;font-weight:600;color:#707CA3;border-bottom:2.5px solid transparent;cursor:pointer;background:none;border-top:0;border-left:0;border-right:0;font-family:inherit}
+.tb.on{color:#2A27B8;border-bottom-color:#3B37E6}
+.pane{display:none}.pane.on{display:block}
+.mx input{width:100%;height:30px;text-align:right;border:1.2px solid #C7D0EA;border-radius:6px;padding:0 6px;font:inherit;font-size:12px;background:#fff}
+.gridwrap{background:#fff;border:1.5px solid #C7D0EA;border-radius:12px;overflow:hidden}
+.gridwrap td input{width:100%;height:28px;border:1.2px solid transparent;border-radius:6px;padding:0 6px;font:inherit;font-size:12.5px;background:transparent}
+.gridwrap td input:hover{border-color:#C7D0EA}
+.gridwrap td input:focus{border-color:#3B37E6;background:#fff;outline:none}
+.gridfoot{display:flex;padding:9px 12px;border-top:1.5px solid #E5EAF8;background:#F8FAFF}
