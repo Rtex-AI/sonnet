@@ -1,0 +1,5 @@
+# The specification source is confidential and this repository is public.
+# Only the encrypted docs.html is published.
+docs/
+*.md
+docs-payload.json
