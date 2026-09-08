@@ -72,6 +72,26 @@ tbody tr:last-child td{border-bottom:0}
 .badge{font-size:9px;font-weight:700;background:#EDE9FE;color:#5B21B6;border-radius:8px;padding:2px 7px;letter-spacing:.04em}
 .badge.e{background:#E3EEFF;color:#2A27B8}
 
+/* ---------------------------------------------- role permission matrix */
+.gridwrap.perm table{font-size:12.5px}
+.gridwrap.perm th.q,.gridwrap.perm td.q{text-align:center;width:74px}
+.gridwrap.perm td{padding:5px 10px}
+tr.permsec td{background:#EEF1FA;font-weight:600;color:#16213D;font-size:11.5px;
+  letter-spacing:.5px;padding:6px 12px}
+.permlbl{padding-left:12px;color:#2B3A6B}
+.gridwrap.perm input[type=checkbox],.gridwrap.perm input[type=radio]{width:15px;height:15px;cursor:pointer}
+.gridwrap.perm input:disabled{cursor:not-allowed;opacity:.32}
+.dash{color:#B6C0DC}
+.actbtn{border:1px solid #C9D2E8;background:#fff;border-radius:20px;padding:2px 9px;
+  font-family:inherit;font-size:11px;color:#3B37E6;cursor:pointer;white-space:nowrap}
+.actbtn:hover{background:#EEF1FA}
+tr.actrow.hide{display:none}
+tr.actrow td{background:#F7F9FE;border-top:0}
+.actwrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:4px 0 4px 24px}
+.actwrap b{font-size:11.5px;color:#16213D;margin-right:6px}
+.actchip{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #D5DDF2;
+  border-radius:20px;padding:3px 11px;font-size:11.5px;color:#2B3A6B;cursor:pointer}
+
 .sec{display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
 .sec .car{margin-left:auto;transition:transform .15s;font-size:9px;color:#9FA9CB}
 .sec.closed .car{transform:rotate(-90deg)}

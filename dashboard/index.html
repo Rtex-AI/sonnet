@@ -74,7 +74,8 @@
 <a class="nv" href="../reports/index.html">Reports</a>
 </div>
 <div class="sec">Administration<span class="car">&#9660;</span></div><div class="grp">
-<a class="nv" href="../users/index.html">Users & roles</a>
+<a class="nv" href="../users/index.html">Users</a>
+<a class="nv" href="../roles/index.html">Roles & permissions</a>
 <a class="nv" href="../sequences/index.html">Document sequences<span class="gims">GIMS</span></a>
 <a class="nv" href="../posting/index.html">Sage 300 posting</a>
 <a class="nv" href="../ops/index.html">Operations</a>
@@ -151,6 +152,20 @@
      return;
    }
    /* --- add row --- */
+   var ab = e.target.closest('button[data-actrow]');
+   if(ab){
+     var id = ab.getAttribute('data-actrow');
+     var row = document.querySelector('tr.actrow[data-actrow="' + id + '"]');
+     if(row) row.classList.toggle('hide');
+     return;
+   }
+   var pa = e.target.closest('[data-permall]');
+   if(pa){
+     var tr = pa.closest('tr');
+     var boxes = tr.querySelectorAll('td.q input[type=checkbox]:not([data-permall]):not(:disabled)');
+     for(var i=0;i<boxes.length;i++) boxes[i].checked = pa.checked;
+     return;
+   }
    var a = e.target.closest('[data-addrow]');
    if(a){
      e.preventDefault();
