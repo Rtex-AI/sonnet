@@ -82,6 +82,7 @@
 </div></nav>
 <div class="main"><div class="bar"><div class="crumb"><b>Setup &amp; masters</b> › <b>BOM placements</b></div>
 <div style="margin-left:auto;display:flex;gap:8px;align-items:center"><span class="role">Administrator</span>
+<button class="fbbtn" type="button">Feedback</button>
 <a class="gbtn" style="height:28px" href="../index.html">All screens</a>
 <a class="gbtn" style="height:28px;border-color:#3B37E6;color:#3B37E6" href="../docs.html" title="Developer documentation — password protected">Dev docs</a></div></div>
 <div class="body"><div class="head"><h1 class="h1">BOM placements</h1><span class="hint">where a material sits in the garment — used on every bill-of-materials line</span><a class="btn" style="margin-left:auto" href="form.html">+ New placement</a></div><div class="card"><table><thead><tr><th>Code</th><th>Name</th><th>Applies to</th><th>Default</th><th>Notes</th></tr></thead><tbody><tr><td><a href="form.html"><b>MAIN</b></a></td><td>Main body</td><td>Fabric</td><td>Yes</td><td>the principal cloth</td></tr><tr><td><a href="form.html"><b>CONT</b></a></td><td>Contrast</td><td>Fabric</td><td>No</td><td>collars, cuffs, panels</td></tr><tr><td><a href="form.html"><b>LIN</b></a></td><td>Lining</td><td>Fabric</td><td>No</td><td></td></tr><tr><td><a href="form.html"><b>PKT</b></a></td><td>Pocket bag</td><td>Fabric</td><td>No</td><td></td></tr><tr><td><a href="form.html"><b>TRIM</b></a></td><td>Trim / closure</td><td>Trim</td><td>No</td><td>buttons, zips</td></tr><tr><td><a href="form.html"><b>LBL</b></a></td><td>Label &amp; packaging</td><td>Trim</td><td>No</td><td>care label, hang tag, polybag</td></tr></tbody></table><div class="foot">6 records · click a row to open it</div></div></div></div></div>
@@ -147,4 +148,86 @@
  if(document.readyState !== 'loading') restore(); else addEventListener('DOMContentLoaded', restore);
  window.__skmInit = restore;   /* SPA calls this after each route change — safe, it only re-applies state */
 })();
-</script></body></html>
+</script><!--FB:START-->
+<style id="fbcss">
+.fbbtn{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 11px;border-radius:7px;
+ border:1.5px solid #E0A106;background:#FFF9EC;color:#8A6300;font-size:12.5px;font-weight:600;
+ font-family:inherit;cursor:pointer;white-space:nowrap}
+.fbbtn:hover{background:#FDF0D0}
+.fbbtn.none{border-color:#D5DDF2;background:#fff;color:#8892B5;font-weight:400}
+.fbbtn .n{background:#E0A106;color:#fff;border-radius:20px;padding:0 6px;font-size:11px;min-width:18px;text-align:center}
+#fbpanel{position:fixed;top:0;right:0;width:420px;max-width:92vw;height:100vh;background:#fff;
+ border-left:1.5px solid #D5DDF2;box-shadow:-10px 0 34px rgba(22,33,61,.14);z-index:9000;
+ display:none;flex-direction:column;font-family:Poppins,system-ui,sans-serif}
+#fbpanel.on{display:flex}
+#fbpanel .h{padding:15px 18px;border-bottom:1.5px solid #E4EAF7;display:flex;align-items:center;gap:10px}
+#fbpanel .h b{font-size:15px;color:#16213D}
+#fbpanel .h .who{font-size:11.5px;color:#8892B5}
+#fbpanel .x{margin-left:auto;border:0;background:none;font-size:22px;color:#8892B5;cursor:pointer;line-height:1}
+#fbpanel .body{overflow-y:auto;padding:14px 18px 40px;flex:1}
+#fbpanel .sec{font-size:10.5px;letter-spacing:.9px;color:#8892B5;font-weight:600;margin:14px 0 8px}
+#fbpanel .sec:first-child{margin-top:0}
+.fbitem{background:#FFFDF6;border:1px solid #F0DFB0;border-left:3px solid #E0A106;border-radius:0 8px 8px 0;
+ padding:9px 12px;margin-bottom:8px;font-size:12.8px;line-height:1.55;color:#42403A}
+.fbitem.gen{background:#F7F9FE;border-color:#D5DDF2;border-left-color:#3B37E6;color:#3A4771}
+#fbpanel .empty{font-size:12.5px;color:#8892B5;padding:10px 0}
+#fbscrim{position:fixed;inset:0;background:rgba(22,33,61,.18);z-index:8999;display:none}
+#fbscrim.on{display:block}
+@media(max-width:700px){#fbpanel{width:100%}}
+</style>
+
+<div id="fbscrim"></div>
+<div id="fbpanel">
+  <div class="h"><b>Client feedback</b><span class="who">Donna Lisk &middot; 16 Sep</span>
+    <button class="x" id="fbx">&times;</button></div>
+  <div class="body" id="fbbody"></div>
+</div>
+<script id="fbjs">
+(function(){
+  if(window.__fbBound) return; window.__fbBound = true;
+  var DATA = {"setup-placements": ["This should include placement for pockets, etc. - maybe this is in notes?", "This should feed cost sheet so ideally would have quantity, price, etc. and be supplier dependent", "Not sure this is the actual BOM or just the placement notes"]}, GENERAL = ["We don't currently have any fields for pant leg length - Cullotte, Crop,", "BOM is not in system currently", "Should style# have BOM attached which would populate Cost sheet?", "Raw Material tracking and inventory is done manually in Excel", "- this is actually not true, there is an adjustment form in Eicon where they enter + and - then Carla maintains Open to Sell report on Excel", "- Open to sell is manual because of lots.  We need to be able to capture lots in inventory.  Will add comment on inventory master", "We need to have authorization table of who can approve what", "We need to confirm which fields are mandatory - master data fields and key fields", "We need approval matrix with limits and workflows", "I don't see anything for samples, QC - tech pack, etc.", "How do we track logistics so we know if shipments are on time?  Can we integrate from CH Robinson, C-Log, etc.? So we can flag late shipments", "Could we add system alerts for overdue approvals, late fabric, late samples, late contractors, late QC, late PO's and general shipments at risk", "Overall the system should have one source of the truth - One point of entry", "Ideally, I would like to see a clear end-to-end flow from Style - Customer Lineup/Order - BOM/Fabric Requirement - PO - Receiving/Lot - Cutting - Sewing - QC - Finished Goods - Shipment - Invoice - Accpac", "We would then be able to identify the source documents and inputs for each step and ensure that there is no duplicate entry.  Each step should be linked and drillable.", "Maybe we're still too early in the process.", "1. Work order to be added as deal is made to cross ref PO that arrives 2 wks later .", "2. Pattern room is a big black whole of processing ., maybe just a human resource issue ., scanning thru the rest is really impressive", "3. Add requests form for following types of samples from the sample room :", "A. prototype sample.", "B. production sample with updated final estimate of fabric needed.", "C. 1st , 2nd fitting sample", "D. sending s"];
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+  function slugOf(){
+    var h = (location.hash||'').replace(/^#/,'').split('/')[0];
+    if(h) return h;
+    var p = location.pathname.replace(/\/(index|form)\.html$/,'').split('/');
+    return p[p.length-1] || 'home';
+  }
+  function render(){
+    var slug = slugOf(), items = DATA[slug] || [], out = '';
+    if(items.length){
+      out += '<div class="sec">ON THIS SCREEN &middot; ' + items.length + '</div>';
+      items.forEach(function(t){ out += '<div class="fbitem">' + esc(t) + '</div>'; });
+    } else {
+      out += '<div class="empty">No remarks on this screen.</div>';
+    }
+    if(GENERAL.length){
+      out += '<div class="sec">GENERAL &middot; APPLIES ACROSS THE SYSTEM</div>';
+      GENERAL.forEach(function(t){ out += '<div class="fbitem gen">' + esc(t) + '</div>'; });
+    }
+    document.getElementById('fbbody').innerHTML = out;
+    document.querySelectorAll('.fbbtn').forEach(function(b){
+      var n = items.length;
+      b.className = 'fbbtn' + (n ? '' : ' none');
+      b.innerHTML = n ? 'Feedback <span class="n">' + n + '</span>' : 'Feedback';
+    });
+  }
+  function open(){ render();
+    document.getElementById('fbpanel').classList.add('on');
+    document.getElementById('fbscrim').classList.add('on'); }
+  function close(){
+    document.getElementById('fbpanel').classList.remove('on');
+    document.getElementById('fbscrim').classList.remove('on'); }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('.fbbtn')){ e.preventDefault(); open(); return; }
+    if(e.target.closest('#fbx') || e.target.id === 'fbscrim'){ close(); }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+  window.addEventListener('hashchange', function(){ render(); });
+  if(document.readyState !== 'loading') render();
+  else document.addEventListener('DOMContentLoaded', render);
+  window.__fbRender = render;
+})();
+</script>
+<!--FB:END-->
+</body></html>
